@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.wrappiness.co)",
+      "Bash(I:\\\\chrome-win64 \\(1\\)\\\\chrome-win64\\\\chrome.exe *)"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Font Capture",
+  "version": "1.0.0",
+  "description": "提取网页中内嵌的 Base64 字体文件并下载",
+  "permissions": ["activeTab", "downloads", "scripting"],
+  "host_permissions": ["<all_urls>", "file:///*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

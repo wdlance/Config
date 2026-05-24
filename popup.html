@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="header">
+    <h1>Font Capture</h1>
+    <div id="status">扫描中...</div>
+    <button id="rescan-btn" class="btn-secondary" disabled>重新扫描</button>
+  </div>
+
+  <div id="search-tool-info" class="hidden">
+    <span class="search-tool-label">搜索引擎:</span>
+    <span id="search-tool-name">检测中...</span>
+  </div>
+
+  <div id="font-list"></div>
+
+  <div id="empty-state" class="hidden">
+    <p>当前页面未检测到字体</p>
+  </div>
+
+  <div id="footer" class="hidden">
+    <button id="download-all-btn" class="btn-primary">全部下载</button>
+  </div>
+
+  <div id="error-state" class="hidden">
+    <p id="error-msg"></p>
+  </div>
+
+  <script src="mode_config.js"></script>
+  <script src="mode1_css.js"></script>
+  <script src="mode2_buildyou.js"></script>
+  <script src="mode3_medzt.js"></script>
+  <script src="search_detector.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
